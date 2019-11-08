@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.rushabh.nasikapp.govegie.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:background="#000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="70dp">
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/first_ingredient"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:inputType="text"
+                android:letterSpacing="0.1"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="12dp"
+                app:hintText="First Ingredient (required)"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#ffffff"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+            </LinearLayout>
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/second_ingredient"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColorHint="#000000"
+                android:hint="Second raw food item"
+                android:layout_gravity="center"
+                android:inputType="text"
+                android:textSize="12dp"
+                android:letterSpacing="0.1"
+                android:layout_marginTop="30dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:hintText="Second Ingredient (required)"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#c1c1c1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp">
+
+            </LinearLayout>
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/third_ingredient"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColorHint="#000000"
+                android:textColor="#000000"
+                android:layout_gravity="center"
+                android:inputType="text"
+                android:layout_marginTop="30dp"
+                app:hintText="Third Ingredient (optional)"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#c1c1c1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp">
+
+            </LinearLayout>
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/fourth_ingredient"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColorHint="#000000"
+                android:textColor="#000000"
+                android:layout_gravity="center"
+                android:inputType="text"
+                android:layout_marginTop="30dp"
+                app:hintText="Fourth Ingredient (optional)"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#c1c1c1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp">
+            </LinearLayout>
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/fifth_ingredient"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColorHint="#000000"
+                android:textColor="#000000"
+                android:layout_gravity="center"
+                android:inputType="text"
+                android:layout_marginTop="30dp"
+                app:hintText="Fifth Ingredient (optional)"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#c1c1c1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp">
+            </LinearLayout>
+
+            <!--  </LinearLayout>
+
+
+              <ImageView
+                  android:layout_width="130dp"
+                  android:layout_height="70dp"
+                  android:src="@drawable/signin"
+                  android:scaleType="fitXY"
+                  android:layout_gravity="center"
+                  android:layout_marginTop="22dp"
+                  />
+              -->
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:scaleType="fitXY"
+                android:text="Submit"
+                android:layout_gravity="center"
+                android:layout_marginTop="22dp"
+                android:textSize="12dp"
+                android:background="#FF5722"
+                />
+            </LinearLayout>
+
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
